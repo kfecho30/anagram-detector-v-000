@@ -6,7 +6,7 @@ class Anagram
   def match(arr)
     matches = []
     arr.each do |poss|
-        matches << poss if poss.split("").sort == @test
+        matches << poss if poss.split("").sort == @word
     end
     matches
   end
