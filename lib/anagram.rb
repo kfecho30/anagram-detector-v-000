@@ -10,6 +10,6 @@ class Anagram
         @final << poss
       end
     end
-    final
+    @final
   end
 end
