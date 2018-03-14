@@ -1,13 +1,12 @@
 class Anagram
   attr_accessor :word
   def initialize(word)
-    @word = word
+    @word = word.split("").sort
   end
   def match(arr)
     matches = []
-    test = @word.split("").sort
     arr.each do |poss|
-        matches << poss if poss.split("").sort == test
+        matches << poss if poss.split("").sort == @test
     end
     matches
   end
