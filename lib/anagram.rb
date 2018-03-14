@@ -8,6 +8,7 @@ class Anagram
     arr.each do |poss|
       if poss.split("").sort == word.split("").sort
         @final << poss
+      end
     end
   end
 end
